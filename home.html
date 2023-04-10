@@ -1,113 +1,71 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>My Fitness Tracker</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			background-image: url("https://images.unsplash.com/photo-1518770503887-693a00951e1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1625&q=80");
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-			font-family: Arial, sans-serif;
-		}
-
-		.container {
-			margin: 0 auto;
-			max-width: 1200px;
-			padding: 20px;
-			box-sizing: border-box;
-		}
-
-		h1 {
-			color: white;
-			text-align: center;
-			margin-top: 0;
-		}
-
-		table {
-			margin: 0 auto;
-			border-collapse: collapse;
-			width: 100%;
-			max-width: 800px;
-			background-color: rgba(255, 255, 255, 0.8);
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-		}
-
-		th, td {
-			padding: 10px;
-			text-align: center;
-			border: 1px solid #ddd;
-			font-size: 14px;
-			color: #666;
-			vertical-align: middle;
-		}
-
-		th {
-			background-color: #f2f2f2;
-			font-size: 16px;
-			font-weight: bold;
-			color: #333;
-		}
-
-		td.editable {
-			background-color: #fff;
-			cursor: pointer;
-		}
-
-		td.editable:hover {
-			background-color: #f9f9f9;
-		}
-
-		input[type="number"] {
-			width: 30px;
-			text-align: center;
-			border: none;
-			background-color: transparent;
-			color: #666;
-			font-size: 14px;
-			outline: none;
-			padding: 0;
-			margin: 0;
-		}
-
-		.plus, .minus {
-			display: inline-block;
-			width: 15px;
-			height: 15px;
-			background-color: #aaa;
-			color: #fff;
-			text-align: center;
-			line-height: 15px;
-			cursor: pointer;
-		}
-
-		.plus:hover, .minus:hover {
-			background-color: #777;
-		}
-
-		.row-add {
-			margin-top: 20px;
-			text-align: center;
-		}
-
-		.row-add button {
-			padding: 10px 20px;
-			background-color: #4CAF50;
-			border: none;
-			color: white;
-			cursor: pointer;
-			font-size: 14px;
-			transition: background-color 0.3s ease;
-		}
-
-		.row-add button:hover {
-			background-color: #3e8e41;
-		}
-
-		.ship {
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			background-image: url("https://plus.unsplash.com/premium_photo-1677589153209-1fe49e5f1348
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Week Calendar</title>
+    <style>
+      /* CSS for the calendar and ship icon */
+      /* ... */
+    </style>
+  </head>
+  <body>
+    <div class="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8">12 Week Calendar</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Week 3</th>
+            <th>Week 4</th>
+            <th>Week 5</th>
+            <th>Week 6</th>
+            <th>Week 7</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day 1</td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+          </tr>
+          <tr>
+            <td>Day 2</td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+            <td class="day"><div class="checkmark"></div></td>
+          </tr>
+          <!-- ... -->
+        </tbody>
+      </table>
+      <div class="add-row-btn-container">
+        <button id="add-row-btn">Add another row</button>
+      </div>
+    </div>
+    <div class="ship">
+      <img src="https://images.unsplash.com/photo-1518770503887-693a00951e1a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1625&amp;q=80" alt="ship">
+      <div class="ship-counter">
+        <button class="minus-btn">-</button>
+        <span class="count">0</span>
+        <button class="plus-btn">+</button>
+      </div>
+    </div>
+    <script>
+      // JavaScript for the interactive elements
+      // ...
+    </script>
+  </body>
+</html>
